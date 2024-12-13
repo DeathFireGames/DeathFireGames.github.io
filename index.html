@@ -4,8 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        :root{
+            --cor_azul_claro:#49B0E6;
+            --cor_amarelo_claro:#E6E149;
+            --cor_azul_escuro:#495EE6;
+            --cor_amarelo_alaranjado:#E6C149;
+            --cor_azul_escuro_acinzado:#5E6591;
+            --cor_azul_claro_acinzado:#546066;
+
+            --fonte_titulo: 'Quantico', sans-serif;
+            --fonte_subtitulo: 'Oswald', sans-serif;
+            --fonte_texto: 'Montserrat', sans-serif;
+        }
+        * {
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        header { 
+            width: 100%;
+        }
+
+        div.title {
+            padding: 20px 10vw;
+        }
+
+        header h1 {
+            text-align: center;
+            font-family: var(--fonte_titulo);
+            font-weight: 300;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+        }
+
+        main h2 {
+            font-family: var(--fonte_subtitulo);
+            font-weight: 500;
+        }
+
+        main h3 {
+            font-family: var(--fonte_subtitulo);
+            font-weight: 400;
+        }
+        
+        main p {
+            font-family: var(--fonte_texto);
+        }
+
+        main a {
+            font-family: var(--fonte_texto);
+            text-decoration: none;
+            font-weight: 600;
+            color: black;
+        }
+
+        a:hover {
+            color: var(--cor_azul_claro);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: var(--cor_amarelo_alaranjado);
+        }
+
+        section#primaria {
+            width: 50%;
+        }
+
+        section#secundaria {
+            width: 50%;
+        }
+
+        div#primaria {
+            padding: 20px;
+        }
+
+        div#secundaria {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+            <h1>Seja bem-vindo ao repositório de <strong>Yuri Rocha</strong> para as atividades do curso em video</h1>
+        </div>
+    </header>
+    <main>
+        <section id="primaria">
+            <div id="primaria">
+                <h2>Principais atividades com base no curso</h2>
+                <h3>HTML</h3>
+                <ul>
+                    <li><a href="html-css/des010/index.html" target="_blank">Desafio X</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="secundaria">
+            <div id="secundaria">
+                <p>Teste</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
