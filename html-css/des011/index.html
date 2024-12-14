@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio XI</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            background-color: black;
+        }
+        #container {
+            background: black url(imagens/espaco.jpg) no-repeat fixed center center / cover;
+            height: 100vh;
+        }
+        #conteudo {
+            position: absolute;
+            width: 20vw;
+            aspect-ratio: 1/1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="conteudo">
+                <img src="imagens/astronauta.png" alt="astronalta">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -26,10 +26,12 @@
         body {
             width: 100vw;
             height: 100vh;
+            background-color: var(--cor_azul_claro_acinzado);
         }
 
         header { 
             width: 100%;
+            background-image: linear-gradient(178deg, var(--cor_azul_escuro_acinzado), var(--cor_azul_claro_acinzado));
         }
 
         div.title {
@@ -40,6 +42,10 @@
             text-align: center;
             font-family: var(--fonte_titulo);
             font-weight: 300;
+        }
+
+        header strong {
+            color: var(--cor_amarelo_alaranjado);
         }
 
         main {
@@ -65,7 +71,7 @@
             font-family: var(--fonte_texto);
             text-decoration: none;
             font-weight: 600;
-            color: black;
+            color: var(--cor_amarelo_alaranjado);
         }
 
         a:hover {
@@ -79,10 +85,12 @@
 
         section#primaria {
             width: 50%;
+            border: 1px solid var(--cor_azul_escuro_acinzado);
         }
 
         section#secundaria {
             width: 50%;
+            border: 1px solid var(--cor_azul_escuro_acinzado);
         }
 
         div#primaria {
@@ -106,6 +114,10 @@
                 <h2>Principais atividades com base no curso</h2>
                 <h3>HTML</h3>
                 <ul>
+                    <li><a href="html-css/des006/index.html" target="_blank">Desafio VI</a></li>
+                    <li><a href="html-css/des007/index.html" target="_blank">Desafio VII</a></li>
+                    <li><a href="html-css/des008/index.html" target="_blank">Desafio VIII</a></li>
+                    <li><a href="html-css/des009/index.html" target="_blank">Desafio IX</a></li>
                     <li><a href="html-css/des010/index.html" target="_blank">Desafio X</a></li>
                 </ul>
             </div>
@@ -116,5 +128,8 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p></p>
+    </footer>
 </body>
 </html>
