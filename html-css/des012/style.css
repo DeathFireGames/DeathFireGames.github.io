@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --font_verse: normal 400 6.5vh/1.5em 'Imperial Script', cursive;
+    --font_title: normal small-caps 400 4em/1em 'Josefin Sans', sans-serif;
+    --font_normal: 400 2.5vh/1em Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+    font: var(--font_normal);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font: var(--font_title);
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+header a:hover, footer a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.25s;
+}
+
+section {
+    padding: 10vh 0 10vh 30px;
+    line-height: 2em;
+    font: var(--font_verse);
+}
+
+section > p {
+    padding-bottom: 2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253);
+    margin-right: 10px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.526);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(../des012/imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../des012/imagens/background002.jpg);
+    background-position: right center;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.516);
+    padding: 5px 10px;
+    text-shadow: 1px 1px 2px black;
+    margin-right: 30px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    line-height: 2em;
+}
